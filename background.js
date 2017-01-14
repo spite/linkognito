@@ -1,6 +1,8 @@
-var connections = new Set();
+'use strict';
 
-chrome.runtime.onConnect.addListener( function( port ) {
+const connections = new Set();
+
+chrome.runtime.onConnect.addListener( port => {
 
 	connections.add( port )
 
@@ -14,7 +16,7 @@ chrome.runtime.onConnect.addListener( function( port ) {
 
 	port.onMessage.addListener( listener );
 
-	port.onDisconnect.addListener( function() {
+	port.onDisconnect.addListener( () => {
 
 		port.onMessage.removeListener( listener );
 		connections.delete( port );
@@ -23,7 +25,7 @@ chrome.runtime.onConnect.addListener( function( port ) {
 
 	chrome.storage.sync.get({
 		combinationKey: 'alt'
-	}, function(items) {
+	}, items => {
 		port.postMessage( { key: items.combinationKey } );
 	});
 
@@ -33,7 +35,7 @@ chrome.runtime.onMessage.addListener( e => {
 
 	chrome.storage.sync.get({
 		combinationKey: 'alt'
-	}, function(items) {
+	}, items => {
 		connections.forEach( port => port.postMessage( { key: items.combinationKey } ) );
 	});
 

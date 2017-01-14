@@ -1,5 +1,7 @@
-var port = chrome.runtime.connect();
-var combinationKey = 'alt';
+'use strict';
+
+const port = chrome.runtime.connect();
+let combinationKey = 'alt';
 
 function post( msg ) {
 
@@ -9,7 +11,7 @@ function post( msg ) {
 
 window.addEventListener( 'click', e => {
 
-	var link = null;
+	let link = null;
 	if( e.target.nodeName === 'A' ) link = e.target;
 	else {
 		link = e.target.closest( 'a' );
