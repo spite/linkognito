@@ -1,6 +1,8 @@
 # linkognito
 Use shift / alt / cmd or super + click to open links in a new Incognito window
 
+[Install from the Chrome store](https://chrome.google.com/webstore/detail/linkognito/ijnjeiggpehnilfocpigaclofpkdglmb)
+
 ![Snapshot](https://raw.githubusercontent.com/spite/linkognito/master/snapshot.png)
 
 # why?
