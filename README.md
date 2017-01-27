@@ -1,7 +1,8 @@
 # linkognito
 Use shift / alt / cmd or super + click to open links in a new Incognito window
 
-[Install from the Chrome store](https://chrome.google.com/webstore/detail/linkognito/ijnjeiggpehnilfocpigaclofpkdglmb)
+* [Install from the Chrome store](https://chrome.google.com/webstore/detail/linkognito/ijnjeiggpehnilfocpigaclofpkdglmb)
+* [Install from Opera add-ons](https://addons.opera.com/extensions/details/linkognito/?display=en) (Use shift+alt+click in Opera)
 
 ![Snapshot](https://raw.githubusercontent.com/spite/linkognito/master/snapshot.png)
 
